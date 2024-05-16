@@ -79,59 +79,59 @@ button {
 .texts {
   padding: 0 0 0 40px;
   max-width: 500px;
+  width: 100%;
   overflow-x: scroll;
 }
 .texts::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
+.editor {
+  width: 450px;
+  padding: 0 5px;
+  font-family: "Lemon Tuesday", sans-serif;
+  font-size: 20px;
+  letter-spacing: 3px;
+  border: 2px black solid;
+  background-color: transparent;
+}
 @media (max-width: 600px) {
-  .text {
-    width: 470px;
+  .texts {
+    width: 450px;
+  }
+  .editor {
+    width: 400px;
   }
 }
-@media (max-width: 570px) {
-  .text {
-    max-width: 430px;
+@media (max-width: 550px) {
+  .texts {
+    width: 400px;
+  }
+  .editor {
+    width: 350px;
   }
 }
-@media (max-width: 540px) {
-  .text {
-    max-width: 400px;
+@media (max-width: 490px) {
+  .texts {
+    width: 350px;
+  }
+  .editor {
+    width: 300px;
   }
 }
-@media (max-width: 510px) {
-  .text {
-    max-width: 370px;
+@media (max-width: 440px) {
+  .texts {
+    width: 300px;
   }
-}
-@media (max-width: 480px) {
-  .text {
-    max-width: 340px;
-  }
-}
-@media (max-width: 450px) {
-  .text {
-    max-width: 310px;
-  }
-}
-@media (max-width: 420px) {
-  .text {
-    max-width: 280px;
+  .editor {
+    width: 250px;
   }
 }
 @media (max-width: 390px) {
-  .text {
-    max-width: 250px;
+  .texts {
+    width: 250px;
   }
-}
-@media (max-width: 360px) {
-  .text {
-    max-width: 220px;
-  }
-}
-@media (max-width: 330px) {
-  .text {
-    max-width: 180px;
+  .editor {
+    width: 200px;
   }
 }

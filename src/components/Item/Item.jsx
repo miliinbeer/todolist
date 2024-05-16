@@ -34,6 +34,7 @@ export const Item = ({
           <div className={styles.texts}>
             {isEditMode ? (
               <Input
+                className={styles.editor}
                 onChange={handlerEditor}
                 value={editedValue.text}
                 onKeyDown={(event) => {
