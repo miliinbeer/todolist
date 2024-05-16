@@ -1,0 +1,29 @@
+@import "./config/config.css";
+@import "./config/reset.css";
+@import "./config/layout.css";
+
+@import "./blocks/inputs.css";
+@import "./blocks/buttons.css";
+
+.title {
+  padding: 5px;
+  text-align: center;
+  font-family: "Lemon Tuesday", sans-serif;
+  font-size: 60px;
+}
+.items {
+  display: flex;
+}
+
+.list {
+  padding: 20px 0 0 0;
+}
+
+@media (max-width: 370px) {
+  .title {
+    font-size: 40px;
+  }
+  .items {
+    flex-direction: column;
+  }
+}

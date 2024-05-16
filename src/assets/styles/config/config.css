@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Lemon Tuesday";
+  src: url("../../fonts/LemonTuesday/LemonTuesday.otf");
+}
+body {
+  height: 100vh;
+  background-size: cover;
+  background-image: url("../../images/background.webp");
+}
