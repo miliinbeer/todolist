@@ -6,8 +6,7 @@ export const Input = ({
   value,
   type,
   placeholder,
-  onKeyDown
-}) => {
+  onKeyDown}) => {
   return (
     <>
       <input

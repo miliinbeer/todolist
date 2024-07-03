@@ -1,4 +1,3 @@
-import React from "react";
 import { Input } from "../ui/Input/Input";
 import { Button } from "../ui/Button/Button";
 import pen from "../../assets/images/icon.webp";
@@ -14,9 +13,8 @@ export const Item = ({
   editTask,
   deleteTask,
 }) => {
-
-  // ↓ Переменная для редактирования значений текста задачи. 
-  // Если переписанное значение не пустое или ложное и его id равен id изменяемой задачи, то переменная будет равна true, в противном случае false 
+  // ↓ Переменная для редактирования значений текста задачи.
+  // Если переписанное значение не пустое или ложное и его id равен id изменяемой задачи, то переменная будет равна true, в противном случае false
   const isEditMode = editedValue && editedValue.id === id;
 
   return (
@@ -45,7 +43,7 @@ export const Item = ({
                 type="text"
               />
             ) : (
-              <p>{text}</p>
+              <span>{text}</span>
             )}
           </div>
         </div>
@@ -54,11 +52,7 @@ export const Item = ({
             onClick={editTask}
             children={<img width="20px" src={pen} alt="icon" />}
           />
-          <Button
-            className={styles.cross}
-            onClick={deleteTask}
-            children="×"
-          />
+          <Button className={styles.cross} onClick={deleteTask} children="×" />
         </div>
       </li>
     </>

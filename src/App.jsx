@@ -119,7 +119,7 @@ function App() {
           <Input
             // ↓ Прослушиватель событий, использующийся для обнаружения события нажатии клавиши
             onKeyDown={(event) => {
-              // ↓ Event.key позволяет узнать значение нажатой клавиши при вводе текста. 
+              // ↓ Event.key позволяет узнать значение нажатой клавиши при вводе текста.
               // При нажатии на "Enter", создаться и добавится задача.
               // Отрабатывает, как event.preventDefault() при отправки формы
               if (event.key === "Enter") {
@@ -152,7 +152,7 @@ function App() {
                       setEditedValue(todo);
                     }}
                     deleteTask={() => deleteTask(todo.id)}
-                    text={todo.text}
+                   text={todo.text}
                   />
                 );
               })}

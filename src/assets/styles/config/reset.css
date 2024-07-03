@@ -11,3 +11,8 @@ input:focus::-webkit-input-placeholder {
   outline: none;
   outline-offset: 0;
 }
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
